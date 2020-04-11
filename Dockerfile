@@ -6,7 +6,7 @@ ENV NODE_ENV=production
 
 RUN yarn && yarn add verdaccio-github-oauth-ui
 
-RUN yarn && yarn add verdaccio-aws-storage
+RUN yarn && yarn add verdaccio-s3-storage
 
 COPY ./config.yaml /verdaccio/conf
 
