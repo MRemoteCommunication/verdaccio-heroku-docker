@@ -21,7 +21,7 @@ packages:
     proxy: npmjs
   '**':
     proxy: npmjs
-    access: $authenticated
+    access: $all
     publish: $authenticated
 logs:
   - {type: stdout, format: pretty, level: http}
