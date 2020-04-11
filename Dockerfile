@@ -1,12 +1,12 @@
-FROM verdaccio/verdaccio:3.12.3
+FROM verdaccio/verdaccio:3
 
 USER root
 
 ENV NODE_ENV=production
 
-RUN yarn && yarn add verdaccio-github-oauth-ui
+RUN npm i && npm install verdaccio-github-oauth-ui
 
-RUN yarn && yarn add verdaccio-aws-s3-storage
+RUN npm i && npm install verdaccio-aws-s3-storage
 
 COPY ./config.yaml /verdaccio/conf
 
