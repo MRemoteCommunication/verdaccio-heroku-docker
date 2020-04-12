@@ -5,7 +5,7 @@ store:
     #keyPrefix: AWS_KEYPREFIX_NAME # optional, has the effect of nesting all files in a subdirectory
     region: AWS_REAGION # optional, will use aws s3's default behavior if not specified
     endpoint: https://s3.ap-northeast-1.amazonaws.com # optional, will use aws s3's default behavior if not specified
-    #s3ForcePathStyle: false # optional, will use path style URLs for S3 objects
+    s3ForcePathStyle: false # optional, will use path style URLs for S3 objects
     accessKeyId: AWS_ACCESSKEY_ID # optional, aws accessKeyId for private S3 bucket
     secretAccessKey: AWS_SECRETKEY # optional, aws secretAccessKey for private S3 bucket
 auth:
