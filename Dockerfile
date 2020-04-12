@@ -1,8 +1,11 @@
-FROM verdaccio/verdaccio:4.4.4
+FROM verdaccio/verdaccio:3
 
 USER root
 
 ENV NODE_ENV=production
 
+RUN npm i && npm install verdaccio-github-oauth-ui
+
+RUN npm i && npm install verdaccio-s3-storage
 
 USER verdaccio
