@@ -1,6 +1,6 @@
 storage: ./storage
 store:
-  aws-s3-storage:
+  s3-storage:
     bucket: AWS_BUCKET_NAME
     #keyPrefix: AWS_KEYPREFIX_NAME # optional, has the effect of nesting all files in a subdirectory
     region: AWS_REAGION # optional, will use aws s3's default behavior if not specified
