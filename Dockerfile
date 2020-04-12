@@ -4,8 +4,8 @@ USER root
 
 ENV NODE_ENV=production
 
-RUN npm i && npm install verdaccio-github-oauth-ui
+RUN yarn && yarn add verdaccio-github-oauth-ui
 
-RUN npm i && npm install verdaccio-s3-storage
+RUN yarn && yarn add verdaccio-s3-storage
 
 USER verdaccio
