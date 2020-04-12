@@ -8,7 +8,9 @@ store:
     #s3ForcePathStyle: false # optional, will use path style URLs for S3 objects
     accessKeyId: AWS_ACCESSKEY_ID # optional, aws accessKeyId for private S3 bucket
     secretAccessKey: AWS_SECRETKEY # optional, aws secretAccessKey for private S3 bucket
-
+auth:
+  github-oauth-ui:
+    org: GITHUB_OAUTH_ORG
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
@@ -23,4 +25,7 @@ packages:
     publish: $authenticated
 logs:
   - {type: stdout, format: pretty, level: http}
-
+middlewares:
+  github-oauth-ui:
+    client-id: GITHUB_OAUTH_CLIENT_ID
+    client-secret: GITHUB_OAUTH_CLIENT_SECRET
